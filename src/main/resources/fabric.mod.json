@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "axonsbackpacks",
+  "version": "${version}",
+
+  "name": "Axon's Backpacks",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "AxonModder"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/axonsbackpacks/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.axonmodder.axonsbackpacks.AxonsBackpacks"
+    ],
+    "client": [
+      "net.axonmodder.axonsbackpacks.AxonsBackpacksClient"
+    ]
+  },
+  "mixins": [
+    "axonsbackpacks.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
